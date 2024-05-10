@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Cor de fundo bonita */
+    background-image: url('background.jpg'); /* Imagem de fundo bonita */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo semi-transparente */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.flower-container {
+    text-align: center;
+}
+
+.flower {
+    width: 100px; /* Tamanho da flor */
+    margin-bottom: 20px;
+    cursor: pointer; /* Cursor alterado para indicar interação */
+}
+
+.animate-flower {
+    animation: rotateFlower 5s infinite linear; /* Adiciona animação à flor */
+}
+
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Borda arredondada */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.carta-container, .video-container {
+    text-align: center;
+}
+
+.carta-hidden, .video-hidden {
+    display: none;
+}
